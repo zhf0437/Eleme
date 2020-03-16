@@ -1,16 +1,16 @@
 <template>
-  <div id="app">123
-    <van-button type="primary">主要按钮</van-button>
-
+  <div id="app">
     <router-view/>
   </div>
 </template>
 
 <script lang="ts">
-
-export default {
-  name: 'App',
-}
+  import { Component, Vue } from 'vue-property-decorator';
+  @Component({
+    // name: 'App'
+  })
+  // export default class extends Vue {}
+  export default class App extends Vue {}
 </script>
 
 <style>
